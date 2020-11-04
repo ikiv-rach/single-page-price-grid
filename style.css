@@ -1,0 +1,87 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: hsl(204, 43%, 93%);
+  background-repeat: no-repeat;
+  font-family: 'Karla', sans-serif;
+  overflow-x: hidden;
+  font-size: 16px;
+  font-weight: 400px;
+}
+.container {
+  background-color: white;
+  height: 500px;
+  width: 600px;
+  border-radius: 10px;
+  margin: 50px 50px 50px 400px;
+}
+
+.top-section {
+  padding: 20px;
+}
+.top-section h1 {
+  color: hsl(179, 62%, 43%);
+  font-weight: 700;
+}
+h2 {
+  color: hsl(71, 73%, 54%);
+}
+.top-section p {
+  color: hsl(218, 22%, 67%);
+}
+.content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  color: hsl(210, 33%, 99%);
+}
+.right-column {
+  background-color: hsl(179, 62%, 43%);
+  padding: 20px;
+}
+.right-column h4 {
+  font-size: 20px;
+}
+.amount {
+  font-size: 20px;
+  font-weight: 700;
+}
+button {
+  padding: 0.7rem 5rem;
+  border-radius: 4px;
+  background-color: hsl(71, 73%, 54%);
+  font-size: 16px;
+  border-color: hsl(179, 62%, 43%);
+  color: hsl(210, 33%, 99%);
+}
+
+button:hover {
+  background-color: #bbfa0c;
+}
+
+.left-column {
+  background-color: hsl(179, 74%, 43%);
+  padding: 20px;
+}
+
+.left-column h4 {
+  font-size: 20px;
+}
+
+.attribution {
+  text-align: center;
+}
+
+@media only screen and (max-width: 400px) {
+  .content {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .container {
+    width: 250px;
+    margin: 50px;
+  }
+  button {
+    padding: 0.7rem 4rem;
+  }
+}
